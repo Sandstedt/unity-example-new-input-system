@@ -14,7 +14,7 @@ PC, Mac & Linux standalone
 
 ## Other dependencies:
 
-This project is also using the Universal Rendering Pipeline, XR plugin (have only tested this on a VR headset)
+This project is also using the Universal Rendering Pipeline.
 
 ## Performence testing scrores
 
