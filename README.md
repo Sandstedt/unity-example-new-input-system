@@ -16,7 +16,7 @@ PC, Mac & Linux standalone
 
 This project is also using the Universal Rendering Pipeline, XR plugin (have only tested this on a VR headset)
 
-## Performence testing scrores
+## Performence testing scores
 
 Tested using the old input manager (on a Asus Rog G14 in Performence mode, directly in the Unity Editor)
 
