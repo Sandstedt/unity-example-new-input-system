@@ -8,26 +8,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Rigidbody rb;
     
     [Header("Moving settings")]
-    public InputAction walkAction;
     [SerializeField] private float moveSpeed;
 
     [SerializeField] private float turnSpeed;
     private Vector3 moveVector;
-
-    void OnEnable()
-    {
-        walkAction.Enable();
-    }
-
-    void OnDisable()
-    {
-        walkAction.Disable();
-    }
     
-    void Update()
+    void OnMove(InputValue value)
     {
         moveVector = Vector3.zero;
-        var moveDirection = walkAction.ReadValue<Vector2>();
+        var moveDirection = value.Get<Vector2>();
         moveVector += new Vector3(moveDirection.x, 0f, moveDirection.y) * moveSpeed; // * Time.deltaTime
     }
 

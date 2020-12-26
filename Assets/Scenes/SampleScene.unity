@@ -322,6 +322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 844909263}
   - component: {fileID: 844909264}
+  - component: {fileID: 844909265}
   - component: {fileID: 844909262}
   - component: {fileID: 844909261}
   - component: {fileID: 844909260}
@@ -438,56 +439,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 844909259}
-  walkAction:
-    m_Name: Walk
-    m_Type: 0
-    m_ExpectedControlType: Vector2
-    m_Id: c8da0d5d-5f15-47bc-a245-d0d01ddc363c
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 2D Vector
-      m_Id: 391c7611-0cac-4544-8d1d-a14608a98152
-      m_Path: 2DVector
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Walk
-      m_Flags: 4
-    - m_Name: up
-      m_Id: 7139006f-532b-49c8-b74e-c5b9245713e7
-      m_Path: <Keyboard>/w
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Walk
-      m_Flags: 8
-    - m_Name: down
-      m_Id: 1b785c23-e990-403d-9482-4ec5156b8612
-      m_Path: <Keyboard>/s
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Walk
-      m_Flags: 8
-    - m_Name: left
-      m_Id: a963c011-cfa3-40f1-b7c4-c83fa5beef64
-      m_Path: <Keyboard>/a
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Walk
-      m_Flags: 8
-    - m_Name: right
-      m_Id: 2c011642-7b04-42a9-9e53-36ab8f75bdd8
-      m_Path: <Keyboard>/d
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Walk
-      m_Flags: 8
   moveSpeed: 100
   turnSpeed: 10
+--- !u!114 &844909265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844909258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: bca2ff2319f829f4c9235d27b948ea81, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 963194227}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
