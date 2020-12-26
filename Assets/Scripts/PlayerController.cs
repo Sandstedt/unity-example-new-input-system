@@ -1,31 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Rigidbody rb;
     
     [Header("Moving settings")]
+    public InputAction walkAction;
     [SerializeField] private float moveSpeed;
 
     [SerializeField] private float turnSpeed;
-    private Vector3 moveVector; 
+    private Vector3 moveVector;
 
-    public void OnMove()
+    void OnEnable()
     {
-        moveVector = Vector3.zero;
-        
-        if (Input.GetKey(KeyCode.A))
-            moveVector += Vector3.left * moveSpeed;
-        if (Input.GetKey(KeyCode.D))
-            moveVector += Vector3.right * moveSpeed;
-        if (Input.GetKey(KeyCode.W))
-            moveVector += Vector3.forward * moveSpeed;
-        if (Input.GetKey(KeyCode.S))
-            moveVector += Vector3.back * moveSpeed;
+        walkAction.Enable();
+    }
+
+    void OnDisable()
+    {
+        walkAction.Disable();
     }
     
+    void Update()
+    {
+        moveVector = Vector3.zero;
+        var moveDirection = walkAction.ReadValue<Vector2>();
+        moveVector += new Vector3(moveDirection.x, 0f, moveDirection.y) * moveSpeed; // * Time.deltaTime
+    }
+
     public void RotateToVelocity(float turnSpeed, Vector3 dir)
     {
         Quaternion slerp;
@@ -42,11 +47,6 @@ public class PlayerController : MonoBehaviour
             slerp = Quaternion.Slerp(rb.rotation, upright, turnSpeed * Time.deltaTime);
         }
         rb.MoveRotation(slerp);
-    }
-    
-    private void Update()
-    {
-        OnMove();
     }
 
     void FixedUpdate()

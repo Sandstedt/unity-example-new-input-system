@@ -24,4 +24,10 @@ Tested using the old input manager (on a Asus Rog G14 in Performence mode, direc
 **CPU main:** 10-15ms
 **Batches:** 8
 
+Tested using the new input system package (on a Asus Rog G14 in Performence mode, directly in the Unity Editor)
+
+**Avarage FPS:** 87-95 FPS
+**CPU main:** 10-11ms
+**Batches:** 8
+
 ![screenshot](screenshot.gif)
