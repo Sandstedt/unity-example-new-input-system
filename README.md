@@ -10,7 +10,7 @@ The main branch is using the old input manager, and the branch new is using the 
 
 ## Platform:
 
-Android - API level 23
+PC, Mac & Linux standalone
 
 ## Other dependencies:
 
