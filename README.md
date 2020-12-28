@@ -25,7 +25,7 @@ Tested using the old input manager (on a Asus Rog G14 in Performence mode, direc
 
 **Branch:** [main](https://github.com/Sandstedt/unity-example-new-input-system/tree/main)
 
-**Platform:** PC, Mac & Linux Standalone running in editor
+**Platform:** PC, Mac & Linux Standalone running in editor\
 **Avarage FPS:** 90-100 FPS\
 **CPU main:** 10-15ms\
 **Batches:** 8
@@ -35,7 +35,7 @@ Tested using the new input system package (on a Asus Rog G14 in Performence mode
 
 **Branch:** [new](https://github.com/Sandstedt/unity-example-new-input-system/tree/new)
 
-**Platform:** PC, Mac & Linux Standalone running in editor
+**Platform:** PC, Mac & Linux Standalone running in editor\
 **Avarage FPS:** 87-95 FPS\
 **CPU main:** 10-11ms\
 **Batches:** 8
@@ -45,15 +45,15 @@ Tested using the new input system package using a PlayerInput component with Aut
 
 **Branch:** [new-player-input](https://github.com/Sandstedt/unity-example-new-input-system/tree/new-player-input)
 
-**Platform:** PC, Mac & Linux Standalone
+**Platform:** PC, Mac & Linux Standalone\
 **Avarage FPS:** 87-96 FPS\
 **CPU main:** 10-11.4ms\
 **Batches:** 8
 
 Day 2: ( cold start )
 
-**Platform:** PC, Mac & Linux Standalone running in editor
-**Avarage FPS:** 100-120 FPS
+**Platform:** PC, Mac & Linux Standalone running in editor\
+**Avarage FPS:** 100-120 FPS\
 **CPU main:** 8-10ms\
 **Batches:** 5
 
@@ -61,7 +61,9 @@ Day 2: ( cold start )
 
 Tested using the new input system package using a PlayerInput component with Auto-Switch with XR Package, OVRplugin, optimized build using OVR Performence Lint Tool and running on the Oculus Quest 2
 
-**Platform:** PC, Mac & Linux Standalone running in editor & Android - API level 23 running on Quest 2. This time with
+**Branch:** [with-xr](https://github.com/Sandstedt/unity-example-new-input-system/tree/with-xr)
+
+**Platform:** PC, Mac & Linux Standalone running in editor & Android - API level 23 running on Quest 2\
 **Avarage FPS:** 100-120 FPS in Editor & 90 FPS (current top cap) on Quest 2\
 **CPU main:** 8-10ms\
 **Batches:** 5
