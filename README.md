@@ -2,7 +2,7 @@
 
 **This branch contains an optimized VR version running max speed (90 fps) on a Oculus Quest 2**
 
-Example for showcasing performence issues in the new input system in Unity 2020.2 containing a simple character controller.
+Example for showcasing the new input system in Unity 2020.2 containing a simple character controller.
 
 The main branch is using the old input manager, and the branch new is using the new input system.
 
@@ -20,6 +20,7 @@ This project is also using the Universal Rendering Pipeline, XR plugin (have onl
 
 ## Performence testing scores
 
+### Old Input Manager
 Tested using the old input manager (on a Asus Rog G14 in Performence mode, directly in the Unity Editor)
 
 **Branch:** [main](https://github.com/Sandstedt/unity-example-new-input-system/tree/main)
@@ -29,6 +30,7 @@ Tested using the old input manager (on a Asus Rog G14 in Performence mode, direc
 **CPU main:** 10-15ms\
 **Batches:** 8
 
+### New Input System
 Tested using the new input system package (on a Asus Rog G14 in Performence mode, directly in the Unity Editor)
 
 **Branch:** [new](https://github.com/Sandstedt/unity-example-new-input-system/tree/new)
@@ -38,6 +40,7 @@ Tested using the new input system package (on a Asus Rog G14 in Performence mode
 **CPU main:** 10-11ms\
 **Batches:** 8
 
+### New Input System + PlayerInput
 Tested using the new input system package using a PlayerInput component with Auto-Switch (on a Asus Rog G14 in Performence mode, directly in the Unity Editor)
 
 **Branch:** [new-player-input](https://github.com/Sandstedt/unity-example-new-input-system/tree/new-player-input)
@@ -53,6 +56,8 @@ Day 2: ( cold start )
 **Avarage FPS:** 100-120 FPS
 **CPU main:** 8-10ms\
 **Batches:** 5
+
+### New Input System + PlayerInput + XR support / OVR Plugin
 
 Tested using the new input system package using a PlayerInput component with Auto-Switch with XR Package, OVRplugin, optimized build using OVR Performence Lint Tool and running on the Oculus Quest 2
 
