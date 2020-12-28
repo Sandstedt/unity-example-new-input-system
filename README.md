@@ -4,7 +4,7 @@
 
 Example for showcasing the new input system in Unity 2020.2 containing a simple character controller.
 
-The main branch is using the old input manager, and the branch new is using the new input system.
+The main branch is using the old input manager, and the branch new, new-player-input & with-xr are using the new input system.
 
 ## Unity version:
 
